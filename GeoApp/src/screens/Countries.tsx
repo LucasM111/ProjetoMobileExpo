@@ -10,7 +10,7 @@ type ListItemProps = {
         name: string;
         region: string;
         capital: string;
-        language: any;
+        languages: any;
         flags: string;
 
     };
@@ -22,7 +22,7 @@ const ListItem = ({ country }: ListItemProps) => {
             name={country.name}
             region={country.region}
             capital={country.capital}
-            language={country.language}
+            languages={country.languages}
             flags={country.flags}
         </View>
 
