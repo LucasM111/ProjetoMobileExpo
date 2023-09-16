@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
-import { ActivityIndicator, View, Text } from "react-native";
-import { FlatList } from "react-native-gesture-handler";
+import { ActivityIndicator, View, Text, FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
 
 
 type ListItemProps = {
@@ -19,11 +19,14 @@ type ListItemProps = {
 const ListItem = ({ country }: ListItemProps) => {
     return (
         <View>
-            name={country.name}
+            <Text>name={country.name} </Text>
+
+            {/* name={country.name}
             region={country.region}
             capital={country.capital}
             languages={country.languages}
-            flags={country.flags}
+            flags={country.flags} */}
+
         </View>
 
     );
