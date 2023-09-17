@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Countries from './src/screens/Countries';
 
+
 const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { ActivityIndicator, View, Text, FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Details from "../components/Details";
 
 
 
@@ -12,6 +13,7 @@ type ListItemProps = {
         capital: string;
         languages: any;
         flags: string;
+        bname: string;
 
     };
 }
@@ -19,14 +21,14 @@ type ListItemProps = {
 const ListItem = ({ country }: ListItemProps) => {
     return (
         <View>
-            <Text>name={country.name} </Text>
-
-            {/* name={country.name}
-            region={country.region}
-            capital={country.capital}
-            languages={country.languages}
-            flags={country.flags} */}
-
+            <Details
+                name={country.name}
+                region={country.region}
+                capital={country.capital}
+                languages={country.languages}
+                flags={country.flags}
+                bname={country.bname}
+            />
         </View>
 
     );
@@ -50,6 +52,7 @@ const Countries = () => {
                     capital: country.capital,
                     languages: country.languages,
                     flags: country.flags.png,
+                    bname: country.flags.alt
                 }))
             )
         } catch (error) {
