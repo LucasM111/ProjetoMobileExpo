@@ -1,6 +1,6 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, Image, View, StyleSheet, ImageBackground } from "react-native";
-import InfoBeers from "../Prova/InfoBeers";
+import InfoBeers from "../prova/InfoBeers";
 
 const styles = StyleSheet.create({
     container: {

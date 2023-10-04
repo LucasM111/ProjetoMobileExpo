@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { ActivityIndicator, View, Text, FlatList, SafeAreaView } from "react-native";
-import CardBeers from "../components/Prova/CardBeers";
+import CardBeers from "../components/prova/CardBeers";
 //rota: https://random-data-api.com/api/v2/beers?size=10
 
 type ListItemProps = {
