@@ -1,17 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { PaperProvider, Button, MD3LightTheme as DefaulTheme } from 'react-native-paper';
-import UsersList from './src/page/UsersList';
-import { colors } from './src/styles/colors';
-
-
+import React from 'react';
+import {PaperProvider, MD3LightTheme as DefaultTheme} from 'react-native-paper';
+import {colors} from './src/styles/colors';
+import UsersList from './src/pages/UsersList';
 
 const theme = {
-  ...DefaulTheme,
+  ...DefaultTheme,
   myOwnProperty: true,
   colors: {
     primary: colors.primary,
-    secundary: colors.secundary,
+    secondary: colors.secondary,
     surfaceVariant: colors.surfaceVariant,
   },
 };
@@ -21,10 +18,7 @@ function App(): JSX.Element {
     <PaperProvider theme={theme}>
       <UsersList />
     </PaperProvider>
-
   );
 }
 
 export default App;
-
-

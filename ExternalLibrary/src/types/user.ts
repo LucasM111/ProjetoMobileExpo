@@ -5,4 +5,4 @@ export type User = {
     email: string;
     avatar: string;
     date_of_birth: string;
-}
+};
